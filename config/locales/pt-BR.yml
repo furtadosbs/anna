@@ -243,6 +243,8 @@ pt-BR:
       state2: "Fase 2 – Como identificar o câncer de pele"
       issue4: "Qual é um fator de risco para câncer de pele?"
       issue5: "Qual sinal pode indicar câncer de pele?"
+      state3: "Fase 3 – Como proteger sua pele"
+      issue6: "Quem tem mais risco?"
   issue1:
     new:
       title: "O que é o câncer de pele?"
@@ -282,4 +284,12 @@ pt-BR:
       option1: "Mancha que muda de tamanho ou cor"
       option2: "Pele hidratada"
       option3: "Sardas normais"
+      submit: "Enviar resposta"
+  issue6:
+    new:
+      title: "Quem tem mais risco?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Pessoas com pele clara"
+      option2: "Pessoas que usam protetor solar"
+      option3: "Pessoas que bebem muita água"
       submit: "Enviar resposta"
