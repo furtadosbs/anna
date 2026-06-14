@@ -245,6 +245,7 @@ pt-BR:
       issue5: "Qual sinal pode indicar câncer de pele?"
       state3: "Fase 3 – Como proteger sua pele"
       issue6: "Quem tem mais risco?"
+      issue7: "Qual FPS é recomendado?"
   issue1:
     new:
       title: "O que é o câncer de pele?"
@@ -292,4 +293,12 @@ pt-BR:
       option1: "Pessoas com pele clara"
       option2: "Pessoas que usam protetor solar"
       option3: "Pessoas que bebem muita água"
+      submit: "Enviar resposta"
+  issue7:
+    new:
+      title: "Qual FPS é recomendado?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "FPS 10"
+      option2: "FPS 30 ou mais"
+      option3: "Não precisa usar"
       submit: "Enviar resposta"
