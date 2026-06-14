@@ -247,6 +247,11 @@ pt-BR:
       issue6: "Quem tem mais risco?"
       issue7: "Qual FPS é recomendado?"
       issue8: "Quando reaplicar o protetor solar?"
+      issue9: "Qual é um hábito correto?"
+      state4: "Fase 4 – Mitos e verdades"
+      issue10: "Pessoas negras precisam usar protetor solar?"
+      issue11: "Em dias nublados é necessário protetor?"
+      issue12: "Bronzeado é sinal de saúde?"
   issue1:
     new:
       title: "O que é o câncer de pele?"
@@ -310,4 +315,36 @@ pt-BR:
       option1: "Uma vez por dia"
       option2: "A cada 2 horas"
       option3: "Nunca precisa reaplicar"
+      submit: "Enviar resposta"
+  issue9:
+    new:
+      title: "Qual é um hábito correto?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Ficar no sol entre 10h e 16h"
+      option2: "Usar chapéu e roupas adequadas"
+      option3: "Não usar proteção"
+      submit: "Enviar resposta"
+  issue10:
+    new:
+      title: "Pessoas negras precisam usar protetor solar?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Não"
+      option2: "Sim"
+      option3: "Só no verão"
+      submit: "Enviar resposta"
+  issue11:
+    new:
+      title: "Em dias nublados é necessário protetor?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Não"
+      option2: "Sim"
+      option3: "Só se estiver calor"
+      submit: "Enviar resposta"
+  issue12:
+    new:
+      title: "Bronzeado é sinal de saúde?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Sim"
+      option2: "Não"
+      option3: "Depende do dia"
       submit: "Enviar resposta"
