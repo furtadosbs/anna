@@ -233,3 +233,7 @@ pt-BR:
     show:
       welcome: "Bem-vindo"
       play: "Jogar"
+  board:
+    show:
+      title: "Tabuleiro"
+      state1: "Fase 1 – Câncer de pele: definição e tipos"
