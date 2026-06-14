@@ -3,17 +3,17 @@
 <%= form_with url: issue1_new_path, method: :post do |form| %>
   <div>
     <%= form.radio_button :answer, 1, checked: true %>
-    <%= form.label :answer, t('.option1'), value: 1 %>
+    <%= form.label :answer, t('.option1'), value: "crescimento" %>
   </div>
 
   <div>
     <%= form.radio_button :answer, 2 %>
-    <%= form.label :answer, t('.option2'), value: 2 %>
+    <%= form.label :answer, t('.option2'), value: "manchas" %>
   </div>
 
   <div>
     <%= form.radio_button :answer, 3 %>
-    <%= form.label :answer, t('.option3'), value: 3 %>
+    <%= form.label :answer, t('.option3'), value: "alergia" %>
   </div>
 
   <div>

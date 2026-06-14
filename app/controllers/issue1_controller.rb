@@ -3,8 +3,7 @@ class Issue1Controller < ApplicationController
   end
 
   def create
-    if params[:answer] == "1"
-      Current.user.update(issue1: true)
+    if Current.user.check_issue1(params.expect([ :answer ]))
       redirect_to board_path, notice: "Resposta correta!"
     else
       flash.now[:alert] = "Resposta incorreta. Tente novamente."
