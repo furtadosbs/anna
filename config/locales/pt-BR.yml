@@ -256,6 +256,10 @@ pt-BR:
       issue13: "Qual dessas bordas merece mais atenção?"
       issue14: "Qual mudança na cor é preocupante?"
       issue15: "Qual mudança ao longo do tempo é perigosa?"
+      state6: "Fase 6 – Crianças e idosos"
+      issue16: "Crianças devem usar protetor solar?"
+      issue17: "Idosos precisam de cuidados com a pele?"
+      issue18: "Qual é um cuidado importante?"
   issue1:
     new:
       title: "O que é o câncer de pele?"
@@ -375,4 +379,28 @@ pt-BR:
       option1: "A pinta ficar igual sempre"
       option2: "A pinta desaparecer"
       option3: "A pinta mudar de tamanho, forma ou cor"
+      submit: "Enviar resposta"
+  issue16:
+    new:
+      title: "Crianças devem usar protetor solar?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Não"
+      option2: "Sim"
+      option3: "Só na praia"
+      submit: "Enviar resposta"
+  issue17:
+    new:
+      title: "Idosos precisam de cuidados com a pele?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Não"
+      option2: "Sim"
+      option3: "Só se estiver doente"
+      submit: "Enviar resposta"
+  issue18:
+    new:
+      title: "Qual é um cuidado importante?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Evitar sol direto em horários fortes"
+      option2: "Não usar proteção"
+      option3: "Tomar sol o dia todo"
       submit: "Enviar resposta"
