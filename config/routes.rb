@@ -40,6 +40,15 @@ Rails.application.routes.draw do
 
   get "pergunta12" => "issue12#new", as: :issue12_new
   post "pergunta12" => "issue12#create", as: :issue12
+
+  get "pergunta13" => "issue13#new", as: :issue13_new
+  post "pergunta13" => "issue13#create", as: :issue13
+
+  get "pergunta14" => "issue14#new", as: :issue14_new
+  post "pergunta14" => "issue14#create", as: :issue14
+
+  get "pergunta15" => "issue15#new", as: :issue15_new
+  post "pergunta15" => "issue15#create", as: :issue15
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

@@ -252,6 +252,10 @@ pt-BR:
       issue10: "Pessoas negras precisam usar protetor solar?"
       issue11: "Em dias nublados é necessário protetor?"
       issue12: "Bronzeado é sinal de saúde?"
+      state5: "Fase 5 – Regra do ABCDE"
+      issue13: "Qual dessas bordas merece mais atenção?"
+      issue14: "Qual mudança na cor é preocupante?"
+      issue15: "Qual mudança ao longo do tempo é perigosa?"
   issue1:
     new:
       title: "O que é o câncer de pele?"
@@ -347,4 +351,28 @@ pt-BR:
       option1: "Sim"
       option2: "Não"
       option3: "Depende do dia"
+      submit: "Enviar resposta"
+  issue13:
+    new:
+      title: "Qual dessas bordas merece mais atenção?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Lisa e bem redonda"
+      option2: "Irregular, \"desenhada\" ou borrada"
+      option3: "Pequena e clara"
+      submit: "Enviar resposta"
+  issue14:
+    new:
+      title: "Qual mudança na cor é preocupante?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Uma cor só (ex: toda marrom clara)"
+      option2: "Várias cores na mesma pinta (preto, marrom, avermelhado)"
+      option3: "Cor igual à pele"
+      submit: "Enviar resposta"
+  issue15:
+    new:
+      title: "Qual mudança ao longo do tempo é perigosa?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "A pinta ficar igual sempre"
+      option2: "A pinta desaparecer"
+      option3: "A pinta mudar de tamanho, forma ou cor"
       submit: "Enviar resposta"
