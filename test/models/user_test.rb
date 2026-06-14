@@ -15,4 +15,14 @@ class UserTest < ActiveSupport::TestCase
     user = User.new
     assert_not user.check_issue1("wrong answer")
   end
+
+  test "check issue2 with correct answer" do
+    user = User.new
+    assert user.check_issue2(User::ISSUE2_ANSWER)
+  end
+
+  test "check issue2 with incorrect answer" do
+    user = User.new
+    assert_not user.check_issue2("wrong answer")
+  end
 end

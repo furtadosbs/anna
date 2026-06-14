@@ -1,0 +1,26 @@
+<h1><%= t '.title' %></h1>
+
+<% if @user.issue2 %>
+  <p><%= t('.already_answered') %></p>
+<% else %>
+  <%= form_with url: issue2_new_path, method: :post do |form| %>
+    <div>
+      <%= form.radio_button :answer, "melanona", checked: true %>
+      <%= form.label :answer, t('.option1'), value: User::ISSUE1_ANSWER %>
+    </div>
+
+    <div>
+      <%= form.radio_button :answer, User::ISSUE2_ANSWER %>
+      <%= form.label :answer, t('.option2'), value: User::ISSUE2_ANSWER %>
+    </div>
+
+    <div>
+      <%= form.radio_button :answer, "sarcoma" %>
+      <%= form.label :answer, t('.option3'), value: "sarcoma" %>
+    </div>
+
+    <div>
+      <%= form.submit t('.submit') %>
+    </div>
+  <% end %>
+<% end %>
