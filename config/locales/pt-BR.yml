@@ -239,6 +239,7 @@ pt-BR:
       state1: "Fase 1 – Câncer de pele: definição e tipos"
       issue1: "O que é o cancer de pele?"
       issue2: "Qual é o tipo mais comum de câncer de pele?"
+      issue3: "Qual tipo é mais perigoso?"
   issue1:
     new:
       title: "O que é o câncer de pele?"
@@ -254,4 +255,12 @@ pt-BR:
       option1: "Melanoma"
       option2: "Não melanoma"
       option3: "Sarcoma"
+      submit: "Enviar resposta"
+  issue3:
+    new:
+      title: "Qual tipo é mais perigoso?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Não melanoma"
+      option2: "Melanoma"
+      option3: "Dermatite"
       submit: "Enviar resposta"
