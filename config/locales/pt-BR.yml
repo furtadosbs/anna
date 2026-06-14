@@ -246,6 +246,7 @@ pt-BR:
       state3: "Fase 3 – Como proteger sua pele"
       issue6: "Quem tem mais risco?"
       issue7: "Qual FPS é recomendado?"
+      issue8: "Quando reaplicar o protetor solar?"
   issue1:
     new:
       title: "O que é o câncer de pele?"
@@ -301,4 +302,12 @@ pt-BR:
       option1: "FPS 10"
       option2: "FPS 30 ou mais"
       option3: "Não precisa usar"
+      submit: "Enviar resposta"
+  issue8:
+    new:
+      title: "Quando reaplicar o protetor solar?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Uma vez por dia"
+      option2: "A cada 2 horas"
+      option3: "Nunca precisa reaplicar"
       submit: "Enviar resposta"
