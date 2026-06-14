@@ -260,6 +260,10 @@ pt-BR:
       issue16: "Crianças devem usar protetor solar?"
       issue17: "Idosos precisam de cuidados com a pele?"
       issue18: "Qual é um cuidado importante?"
+      state7: "Fase 7 – Mensagem motivacional"
+      issue19: "Cuidar da pele é importante por quê?"
+      issue20: "O autocuidado é:"
+      issue21: "Proteger-se do sol ajuda a:"
   issue1:
     new:
       title: "O que é o câncer de pele?"
@@ -403,4 +407,28 @@ pt-BR:
       option1: "Evitar sol direto em horários fortes"
       option2: "Não usar proteção"
       option3: "Tomar sol o dia todo"
+      submit: "Enviar resposta"
+  issue19:
+    new:
+      title: "Cuidar da pele é importante por quê?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Só por estética"
+      option2: "Para saúde e bem-estar"
+      option3: "Não é importante"
+      submit: "Enviar resposta"
+  issue20:
+    new:
+      title: "O autocuidado é:"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Desnecessário"
+      option2: "Um ato de amor próprio"
+      option3: "Perda de tempo"
+      submit: "Enviar resposta"
+  issue21:
+    new:
+      title: "Proteger-se do sol ajuda a:"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Evitar problemas de pele"
+      option2: "Ficar mais cansado"
+      option3: "Não muda nada"
       submit: "Enviar resposta"

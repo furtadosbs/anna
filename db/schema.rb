@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_06_14_214500) do
+ActiveRecord::Schema[8.1].define(version: 2026_06_14_221500) do
   create_table "sessions", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "ip_address"
@@ -33,7 +33,10 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_14_214500) do
     t.boolean "issue16", default: false, null: false
     t.boolean "issue17", default: false, null: false
     t.boolean "issue18", default: false, null: false
+    t.boolean "issue19", default: false, null: false
     t.boolean "issue2", default: false, null: false
+    t.boolean "issue20", default: false, null: false
+    t.boolean "issue21", default: false, null: false
     t.boolean "issue3", default: false, null: false
     t.boolean "issue4", default: false, null: false
     t.boolean "issue5", default: false, null: false
