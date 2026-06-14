@@ -238,3 +238,10 @@ pt-BR:
       title: "Tabuleiro"
       state1: "Fase 1 – Câncer de pele: definição e tipos"
       issue1: "O que é o cancer de pele?"
+  issue1:
+    new:
+      title: "O que é o câncer de pele?"
+      option1: "Crescimento descontrolado de células da pele"
+      option2: "Apenas manchas causadas pelo sol"
+      option3: "Uma alergia passageira"
+      submit: "Enviar resposta"
