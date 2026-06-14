@@ -241,6 +241,7 @@ pt-BR:
   issue1:
     new:
       title: "O que é o câncer de pele?"
+      already_answered: "Você já respondeu essa pergunta."
       option1: "Crescimento descontrolado de células da pele"
       option2: "Apenas manchas causadas pelo sol"
       option3: "Uma alergia passageira"
