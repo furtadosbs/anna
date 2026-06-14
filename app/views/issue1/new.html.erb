@@ -3,7 +3,7 @@
 <%= form_with url: issue1_new_path, method: :post do |form| %>
   <div>
     <%= form.radio_button :answer, 1, checked: true %>
-    <%= form.label :answer, t('.option1'), value: "crescimento" %>
+    <%= form.label :answer, t('.option1'), value: User::ISSUE1_ANSWER %>
   </div>
 
   <div>

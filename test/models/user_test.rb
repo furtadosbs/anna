@@ -8,7 +8,7 @@ class UserTest < ActiveSupport::TestCase
 
   test "check issue1 with correct answer" do
     user = User.new
-    assert user.check_issue1("crescimento")
+    assert user.check_issue1(User::ISSUE1_ANSWER)
   end
 
   test "check issue1 with incorrect answer" do
