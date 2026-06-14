@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "issue4/show"
   resource :session
   resources :passwords, param: :token
 
@@ -12,6 +13,9 @@ Rails.application.routes.draw do
 
   get "pergunta3" => "issue3#new", as: :issue3_new
   post "pergunta3" => "issue3#create", as: :issue3
+
+  get "pergunta4" => "issue4#new", as: :issue4_new
+  post "pergunta4" => "issue4#create", as: :issue4
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

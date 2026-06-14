@@ -2,6 +2,7 @@ class User < ApplicationRecord
   ISSUE1_ANSWER = "crescimento"
   ISSUE2_ANSWER = "nao_melanoma"
   ISSUE3_ANSWER = "melanoma"
+  ISSUE4_ANSWER = "sol"
 
   has_secure_password
   has_many :sessions, dependent: :destroy
@@ -23,6 +24,12 @@ class User < ApplicationRecord
   def check_issue3(answer)
     return false unless answer.strip.downcase == ISSUE3_ANSWER
     update(issue3: true)
+    true
+  end
+
+  def check_issue4(answer)
+    return false unless answer.strip.downcase == ISSUE4_ANSWER
+    update(issue4: true)
     true
   end
 end

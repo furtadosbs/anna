@@ -240,6 +240,8 @@ pt-BR:
       issue1: "O que é o cancer de pele?"
       issue2: "Qual é o tipo mais comum de câncer de pele?"
       issue3: "Qual tipo é mais perigoso?"
+      state2: "Fase 2 – Como identificar o câncer de pele"
+      issue4: "Qual é um fator de risco para câncer de pele?"
   issue1:
     new:
       title: "O que é o câncer de pele?"
@@ -263,4 +265,12 @@ pt-BR:
       option1: "Não melanoma"
       option2: "Melanoma"
       option3: "Dermatite"
+      submit: "Enviar resposta"
+  issue4:
+    new:
+      title: "Qual é um fator de risco para câncer de pele?"
+      already_answered: "Você já respondeu essa pergunta."
+      option1: "Beber água"
+      option2: "Exposição ao sol sem proteção"
+      option3: "Dormir pouco"
       submit: "Enviar resposta"
