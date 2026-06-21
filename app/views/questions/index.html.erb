@@ -8,9 +8,7 @@
 
     <ul class="stage__list">
       <% stage.questions.each do |question| %>
-        <span class="stage__item">
-          <%= question.description %>
-        </span>
+        <%= link_to question.description, new_question_answer_path(question), class: "stage__item" %>
       <% end %>
     </ul>
   </section>

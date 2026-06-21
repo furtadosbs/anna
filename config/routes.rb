@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :questions, only: [ :index ]
+  resources :questions, only: [ :index ] do
+    resources :answers, only: [ :new, :create ]
+  end
   resource :session
   resources :passwords, param: :token
 
