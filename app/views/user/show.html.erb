@@ -1,3 +1,5 @@
-<h1><%= t '.welcome' %>, <%= Current.user.email_address %>!</h1>
+<div class="card__header">
+  <h1><%= t '.Menu' %></h1>
+</div>
 
-<%= link_to t('.play'), board_path %>
+<%= link_to t('.play'), board_path, class: "btn btn--primary" %>

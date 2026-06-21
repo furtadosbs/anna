@@ -231,7 +231,7 @@ pt-BR:
     pm: pm
   user:
     show:
-      welcome: "Bem-vindo"
+      welcome: "Menu"
       play: "Jogar"
   board:
     show:
