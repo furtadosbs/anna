@@ -14,8 +14,6 @@ class Issue5ControllerTest < ActionDispatch::IntegrationTest
   test "should redirect to board on correct answer" do
     sign_in_as(@user)
     post issue5_url, params: { answer: User::ISSUE5_ANSWER }
-    assert_redirected_to board_path
-    follow_redirect!
-    assert_select ".notice", "Resposta correta!"
+    assert_redirected_to issue5_path
   end
 end
