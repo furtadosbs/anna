@@ -43,7 +43,7 @@ body {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: var(--color-text);
   background-color: var(--color-bg);
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -164,4 +164,19 @@ main {
 
 .radio input[type="radio"] {
   display: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.navbar__brand {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-text);
 }

@@ -24,6 +24,10 @@
   </head>
 
   <body>
+    <nav class="navbar">
+      <%= link_to "Sol nascente", root_path, class: "navbar__brand" %>
+    </nav>
+
     <main class="card">
       <%= tag.div(flash[:alert], class: "alert") if flash[:alert] %>
       <%= tag.div(flash[:notice], class: "notice") if flash[:notice] %>
