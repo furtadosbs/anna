@@ -212,3 +212,7 @@ main {
   text-decoration: none;
   color: var(--color-text);
 }
+
+.stage__item--correct {
+  background-color: var(--color-primary);
+}
