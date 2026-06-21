@@ -1,13 +1,13 @@
 require "test_helper"
 
-class BoardControllerTest < ActionDispatch::IntegrationTest
+class HomeControllerTest < ActionDispatch::IntegrationTest
   setup do
     @user = users(:one)
   end
 
-  test "should get show" do
+  test "should get index" do
     sign_in_as(@user)
-    get board_url
+    get root_path
     assert_response :success
   end
 end
