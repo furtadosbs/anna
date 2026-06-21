@@ -127,6 +127,9 @@ main {
   cursor: pointer;
   background-color: transparent;
   border: 1px solid transparent;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
 }
 
 .btn--primary {
