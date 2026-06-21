@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get "issue4/show"
+  resources :questions, only: [ :index ]
   resource :session
   resources :passwords, param: :token
 

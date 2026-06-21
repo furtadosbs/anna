@@ -1,0 +1,17 @@
+<% @stages.each do |stage| %>
+  <section class="stage">
+    <header class="stage__header">
+      <h3>
+        <%= stage.title %>
+      </h3>
+    </header>
+
+    <ul class="stage__list">
+      <% stage.questions.each do |question| %>
+        <span class="stage__item">
+          <%= question.description %>
+        </span>
+      <% end %>
+    </ul>
+  </section>
+<% end %>
