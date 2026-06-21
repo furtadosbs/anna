@@ -11,7 +11,7 @@
 
     <%= yield :head %>
 
-    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%# Enable PWA manifest for installajble apps (make sure to enable in config/routes.rb too!) %>
     <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
 
     <link rel="icon" href="/icon.png" type="image/png">
@@ -26,7 +26,7 @@
   <body>
     <main class="card">
       <%= tag.div(flash[:alert], class: "alert") if flash[:alert] %>
-      <%= tag.div(flash[:notice]) if flash[:notice] %>
+      <%= tag.div(flash[:notice], class: "notice") if flash[:notice] %>
 
       <%= yield %>
     </main>
