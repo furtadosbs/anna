@@ -1,26 +1,28 @@
-<h1><%= t '.title' %></h1>
+<header class="card__header">
+  <h2><%= t '.title' %></h2>
+</header>
 
 <% if @user.issue20 %>
   <p><%= t('.already_answered') %></p>
 <% else %>
-  <%= form_with url: issue20_new_path, method: :post do |form| %>
-    <div>
+  <%= form_with url: issue20_new_path, method: :post, class: "card__form", data: { turbo: false } do |form| %>
+    <div class="radio">
       <%= form.radio_button :answer, "desnecessario", checked: true %>
       <%= form.label :answer, t('.option1'), value: "desnecessario" %>
     </div>
 
-    <div>
+    <div class="radio">
       <%= form.radio_button :answer, User::ISSUE20_ANSWER %>
       <%= form.label :answer, t('.option2'), value: User::ISSUE20_ANSWER %>
     </div>
 
-    <div>
+    <div class="radio">
       <%= form.radio_button :answer, "perda_tempo" %>
       <%= form.label :answer, t('.option3'), value: "perda_tempo" %>
     </div>
 
     <div>
-      <%= form.submit t('.submit') %>
+      <%= form.submit t('.submit'), class: "btn btn--primary" %>
     </div>
   <% end %>
 <% end %>

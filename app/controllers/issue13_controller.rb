@@ -6,7 +6,7 @@ class Issue13Controller < ApplicationController
 
   def create
     if @user.check_issue13(params.expect([ :answer ]))
-      redirect_to board_path, notice: "Resposta correta!"
+      redirect_to issue13_path
     else
       flash.now[:alert] = "Resposta incorreta. Tente novamente."
       render :new
