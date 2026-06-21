@@ -1,11 +1,15 @@
-<%= tag.div(flash[:alert], style: "color:red") if flash[:alert] %>
-<%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
+<header class="card__header">
+  <h1><%= t('.title') %></h1>
+  <h2><%= t('.lead') %></h2>
+</header>
 
-<%= form_with url: session_path do |form| %>
-  <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your email address", value: params[:email_address] %><br>
-  <%= form.password_field :password, required: true, autocomplete: "current-password", placeholder: "Enter your password", maxlength: 72 %><br>
-  <%= form.submit "Sign in" %>
-<% end %>
-<br>
 
-<%= link_to "Forgot password?", new_password_path %>
+<div class="card__body">
+  <%= form_with url: session_path, class: "card__form" do |form| %>
+    <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: t('.email_placeholder'), value: params[:email_address] %>
+    <%= form.password_field :password, required: true, autocomplete: "current-password", placeholder: t('.password_placeholder') %>
+    <%= form.submit t('.play'), class: "btn btn--primary" %>
+  <% end %>
+
+  <%= link_to t('.forgot_password_link'), new_password_path, class: "text--sm" %>
+</div>

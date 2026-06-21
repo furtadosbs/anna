@@ -365,7 +365,7 @@ pt-BR:
       title: "Qual dessas bordas merece mais atenção?"
       already_answered: "Você já respondeu essa pergunta."
       option1: "Lisa e bem redonda"
-      option2: "Irregular, \"desenhada\" ou borrada"
+      option2: 'Irregular, "desenhada" ou borrada'
       option3: "Pequena e clara"
       submit: "Enviar resposta"
   issue14:
@@ -432,3 +432,11 @@ pt-BR:
       option2: "Ficar mais cansado"
       option3: "Não muda nada"
       submit: "Enviar resposta"
+  sessions:
+    new:
+      title: "Sol Brinhante"
+      lead: "Proteja sua pele!"
+      email_placeholder: "Digite seu e-mail"
+      password_placeholder: "Digite sua senha"
+      forgot_password_link: "Esqueceu sua senha?"
+      play: "Jogar"

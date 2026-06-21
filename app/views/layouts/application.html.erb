@@ -24,14 +24,11 @@
   </head>
 
   <body>
-    <div>
-      <% if notice %>
-        <p class="notice"><%= notice %></p>
-      <% end %>
-      <% if alert %>
-        <p class="alert"><%= alert %></p>
-      <% end %>
-    </div>
-    <%= yield %>
+    <main class="card">
+      <%= tag.div(flash[:alert], class: "alert") if flash[:alert] %>
+      <%= tag.div(flash[:notice]) if flash[:notice] %>
+
+      <%= yield %>
+    </main>
   </body>
 </html>
