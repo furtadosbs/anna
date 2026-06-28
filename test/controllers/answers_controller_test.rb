@@ -14,5 +14,8 @@ class AnswersControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to new_question_answer_path(question)
+
+    follow_redirect!
+    assert_select "#correct-message", "Parabéns você acertou!"
   end
 end
