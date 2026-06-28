@@ -4,7 +4,6 @@ class Answer < ApplicationRecord
 
   validate :correct?
 
-
   private
 
   def correct?

@@ -7,9 +7,9 @@ class AnswersController < ApplicationController
   end
 
   def create
-    value = params.expect(answer: [ :value ])[:value]
-    if value == @question.correct_value
-      @question.answer.create(user: Current.user, value: value)
+    @answer = @question.answer.build(answer_params)
+    @answer.user = Current.user
+    if @answer.save
       redirect_to new_question_answer_path(@question)
     else
       flash[:alert] = "Responsta incorreta. Tente novamente"
@@ -21,5 +21,9 @@ class AnswersController < ApplicationController
 
   def set_question
     @question = Question.find(params[:question_id])
+  end
+
+  def answer_params
+    params.expect(answer: [ :value ])
   end
 end
