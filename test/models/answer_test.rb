@@ -1,7 +1,9 @@
 require "test_helper"
 
 class AnswerTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "invalid with incorrect answer" do
+    answer = answers(:one)
+    answer.value = "error"
+    assert_not answer.valid?
+  end
 end
