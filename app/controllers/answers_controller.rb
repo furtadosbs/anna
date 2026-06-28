@@ -3,7 +3,7 @@ class AnswersController < ApplicationController
 
   def new
     @question = Question.find(params[:question_id])
-    @awnser = Answer.new
+    @answer = Answer.new
   end
 
   def create
