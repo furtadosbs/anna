@@ -7,7 +7,7 @@ class AnswersController < ApplicationController
   end
 
   def create
-    @answer = @question.answer.build(answer_params)
+    @answer = @question.answers.build(answer_params)
     @answer.user = Current.user
     if @answer.save
       redirect_to new_question_answer_path(@question)
