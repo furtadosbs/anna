@@ -1,9 +1,3 @@
-<header class="card__header">
-  <h1><%= t('.title') %></h1>
-  <h2><%= t('.lead') %></h2>
-</header>
-
-
 <div class="card__body">
   <%= form_with url: session_path, class: "card__form" do |form| %>
     <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: t('.email_placeholder'), value: params[:email_address] %>

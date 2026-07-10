@@ -1,0 +1,11 @@
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
