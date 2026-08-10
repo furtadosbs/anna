@@ -12,7 +12,7 @@ class AnswersController < ApplicationController
     if @answer.save
       redirect_to new_question_answer_path(@question)
     else
-      flash[:alert] = "Responsta incorreta. Tente novamente"
+      flash[:alert] = "Resposta incorreta. Tente novamente"
       redirect_to new_question_answer_path(@question)
     end
   end
