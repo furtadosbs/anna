@@ -87,34 +87,3 @@ main {
   max-width: 800px;
   margin: 0 auto;
 }
-
-.text--sm {
-  font-size: 0.5rem;
-}
-
-.alert {
-  color: var(--color-error);
-}
-
-.radio {
-  display: flex;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
-.radio:has(:checked) {
-  border-color: var(--color-primary);
-  background-color: var(--color-primary);
-  color: #fff;
-}
-
-.radio label {
-  flex: 1;
-  margin-left: 0.5rem;
-  padding: 0.5rem 1rem;
-}
-
-.radio input[type="radio"] {
-  display: none;
-}
