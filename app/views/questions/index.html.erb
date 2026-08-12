@@ -12,19 +12,11 @@
 </nav>
 
 <main class="container">
-  <% @stages.each do |stage| %>
-    <section class="stage">
-      <header class="stage__header">
-        <h2>
-          <%= stage.title %>
-        </h2>
-      </header>
-
-      <ul class="stage__list">
-        <% stage.questions.each do |question| %>
-          <%= link_to question.description, new_question_answer_path(question), class: "stage__item" %>
-        <% end %>
-      </ul>
-    </section>
-  <% end %>
+  <ul class="questions">
+    <% @questions.each do |question| %>
+      <li>
+        <%= link_to question.description, new_question_answer_path(question), class: "questions__link" %>
+      </li>
+    <% end %>
+  </ul>
 </main>

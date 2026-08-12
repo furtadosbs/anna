@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
   def index
-    @stages = Stage.all
+    @questions = Question.all
   end
 end
