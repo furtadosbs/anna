@@ -1,0 +1,28 @@
+<main class="container">
+  <header class="card__header">
+    <h2>
+      <%= @question.description %>
+    </h2>
+  </header>
+
+  <% if Current.user.answers.where(question: @question).size >= 1 %>
+    <p id="correct-message">Parabéns você acertou!</p>
+  <% else %>
+    <%= form_with model: [@question, @answer] , method: :post, class: "card__form", data: { turbo: false } do |form| %>
+      <% @question.options.each do |option| %>
+        <div class="radio">
+          <%= form.label :value, option.description, value: option.value %>
+          <%= form.radio_button :value, option.value %>
+        </div>
+      <% end %>
+
+      <div>
+        <%= form.submit 'Responder', class: 'btn btn--primary' %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <div>
+    <%= link_to 'Voltar', questions_path %>
+  </div>
+</main>

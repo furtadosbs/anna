@@ -15,7 +15,7 @@
   <ul class="questions">
     <% @questions.each do |question| %>
       <li>
-        <%= link_to question.description, new_question_answer_path(question), class: "questions__link" %>
+        <%= link_to question.description, question, class: "questions__link" %>
       </li>
     <% end %>
   </ul>

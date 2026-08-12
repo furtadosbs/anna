@@ -13,7 +13,7 @@ class AnswersControllerTest < ActionDispatch::IntegrationTest
       post question_answers_path(question), params: { answer: { value: question.correct_value } }
     end
 
-    assert_redirected_to new_question_answer_path(question)
+    assert_redirected_to question
 
     follow_redirect!
     assert_select "#correct-message", "Parabéns você acertou!"
