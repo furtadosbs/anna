@@ -1,7 +1,9 @@
+<main class="container">
 <header class="card__header">
   <h2>
     <%= @question.description %>
   </h2>
+</header>
 
   <% if Current.user.answers.where(question: @question).size >= 1 %>
     <p id="correct-message">Parabéns você acertou!</p>
@@ -17,11 +19,10 @@
       <div>
         <%= form.submit 'Responder', class: 'btn btn--primary' %>
       </div>
-
     <% end %>
   <% end %>
 
   <div>
     <%= link_to 'Voltar', questions_path %>
   </div>
-</header>
+</main>
