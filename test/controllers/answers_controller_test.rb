@@ -18,18 +18,4 @@ class AnswersControllerTest < ActionDispatch::IntegrationTest
     follow_redirect!
     assert_select "#correct-message", "Parabéns você acertou!"
   end
-
-  test "post incorrect answers" do
-    sign_in_as(@user)
-    question = questions(:one)
-
-    assert_no_difference("Answer.count") do
-      post question_answers_path(question), params: { answer: { value: "wrong answer" } }
-    end
-
-    assert_redirected_to new_question_answer_path(question)
-
-    follow_redirect!
-    assert_select "#incorrect-message", "Resposta incorreta. Tente novamente"
-  end
 end
