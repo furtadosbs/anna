@@ -43,6 +43,11 @@ body {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: var(--color-text);
   background-color: var(--color-bg);
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 2rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -81,4 +86,9 @@ select {
   padding: 0.5rem 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
