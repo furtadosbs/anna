@@ -1,6 +1,7 @@
 .menu {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
 .menu__link {
