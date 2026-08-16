@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__link {
+  background-color: var(--color-primary);
+  border: 2px solid var(--white);
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.menu__link svg {
+  fill: var(--white) !important;
+}
+
+.menu__text {
+  display: none;
+}

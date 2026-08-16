@@ -17,3 +17,10 @@
   text-align: center;
   display: block;
 }
+
+.questions__menu {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  width: 100%;
+}
