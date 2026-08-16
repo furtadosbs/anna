@@ -12,6 +12,11 @@
   height: 4rem;
   padding: 0.5rem;
   border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu__link:hover {
+  transform: scale(1.1);
 }
 
 .menu__link svg {
