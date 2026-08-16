@@ -10,9 +10,7 @@
       <% @questions.each_with_index do |question, index| %>
         <li>
           <%= link_to question, class: "questions-list__link" do %>
-            <span class="question-list__text">
-              <%= index + 1 %>
-            </span>
+            <%= index + 1 %>
           <% end %>
         </li>
       <% end %>
