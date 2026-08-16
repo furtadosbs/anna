@@ -1,14 +1,14 @@
-<nav class="navbar">
+<header class="navbar">
   <%= link_to root_path, class: "navbar__brand" do %>
     <%= image_tag "brand.png"%>
   <% end %>
-</nav>
+</header>
 
 <main class="container">
-  <ul class="questions">
+  <ul class="questions-list">
     <% @questions.each do |question| %>
       <li>
-        <%= link_to question.description, question, class: "questions__link" %>
+        <%= link_to question.description, question, class: "questions-list__link" %>
       </li>
     <% end %>
   </ul>

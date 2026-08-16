@@ -1,4 +1,4 @@
-.questions {
+.questions-list {
   list-style: none;
   padding: 0;
   display: flex;
@@ -6,7 +6,7 @@
   gap: 1rem;
 }
 
-.questions__link {
+.questions-list__link {
   color: var(--color-text);
   background-color: var(--color-primary);
   text-decoration: none;
