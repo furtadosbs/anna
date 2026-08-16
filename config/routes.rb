@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     resources :answers, only: [ :create ]
   end
 
+  resources :articles, only: [ :index ]
+
   resource :session
   resources :passwords, param: :token
   resource :user
