@@ -1,9 +1,14 @@
-<div class="card__body">
-  <%= form_with url: session_path, class: "card__form" do |form| %>
-    <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: t('.email_placeholder'), value: params[:email_address] %>
-    <%= form.password_field :password, required: true, autocomplete: "current-password", placeholder: t('.password_placeholder') %>
-    <%= form.submit t('.play'), class: "btn btn--primary" %>
-  <% end %>
+<div class="container">
+  <div class="card">
+    <div class="card__body">
+      <%= form_with url: session_path, class: "card__form" do |form| %>
+        <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: t('.email_placeholder'), value: params[:email_address] %>
+        <%= form.password_field :password, required: true, autocomplete: "current-password", placeholder: t('.password_placeholder') %>
+        <%= form.submit t('.play'), class: "btn btn--primary" %>
+      <% end %>
 
-  <%= link_to t('.forgot_password_link'), new_password_path, class: "text--sm" %>
+      <%= link_to t('.forgot_password_link'), new_password_path, class: "text--sm" %>
+      <%= link_to "Criar nova conta", new_user_path %>
+    </div>
+  </div>
 </div>
