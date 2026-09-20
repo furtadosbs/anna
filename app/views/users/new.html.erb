@@ -2,7 +2,7 @@
   <div class="card">
     <h2>Novo usuário</h2>
 
-    <%= form_with model: @user, local: true do |form| %>
+    <%= form_with model: @user, url: user_path, local: true do |form| %>
       <div>
         <%= form.label :email_address %>
         <%= form.email_field :email_address %>
