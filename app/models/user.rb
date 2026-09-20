@@ -10,4 +10,8 @@ class User < ApplicationRecord
   def points
     answers.count
   end
+
+  def has_answered?(question)
+    answers.exists?(question: question)
+  end
 end

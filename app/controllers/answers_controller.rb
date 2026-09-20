@@ -2,7 +2,7 @@ class AnswersController < ApplicationController
   before_action :set_question, only: [ :new, :create ]
 
   def new
-    if Current.user.answers.where(question: @question).size >= 1
+    if Current.user.has_answered?(@question)
       redirect_to questions_path, alert: "Você já respondeu essa questão."
       return
     end

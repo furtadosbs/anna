@@ -10,4 +10,16 @@ class UserTest < ActiveSupport::TestCase
     user = users(:one)
     assert_equal(2, user.points)
   end
+
+  test "should returns if user has answered a question" do
+    user = users(:one)
+    question = questions(:one)
+    assert(user.has_answered?(question))
+  end
+
+  test "should returns if user has not answered a question" do
+    user = users(:one)
+    question = questions(:four)
+    assert_not(user.has_answered?(question))
+  end
 end
