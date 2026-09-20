@@ -14,3 +14,8 @@ three:
   description: MyString
   stage: two
   correct_value: MyString
+
+four:
+  description: MyString
+  stage: two
+  correct_value: MyString

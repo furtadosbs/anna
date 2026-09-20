@@ -1,8 +1,12 @@
 class AnswersController < ApplicationController
-  before_action :set_question, only: [ :create ]
+  before_action :set_question, only: [ :new, :create ]
 
   def new
-    @question = Question.find(params[:question_id])
+    if Current.user.answers.where(question: @question).size >= 1
+      redirect_to questions_path, alert: "Você já respondeu essa questão."
+      return
+    end
+
     @answer = Answer.new
   end
 
@@ -11,7 +15,7 @@ class AnswersController < ApplicationController
     @answer.user = Current.user
 
     if @answer.save
-      redirect_to new_question_answer_path(@question), notice: "Parabéns você acertou!"
+      redirect_to questions_path, notice: "Parabéns você acertou!"
     else
       flash[:alert] = "Resposta incorreta. Tente novamente"
       render :new, status: :unprocessable_entity

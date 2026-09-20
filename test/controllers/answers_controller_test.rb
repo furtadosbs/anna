@@ -5,13 +5,24 @@ class AnswersControllerTest < ActionDispatch::IntegrationTest
     @user = users(:one)
   end
 
-  test "should get index" do
+  test "should render new when user no answer the question" do
     sign_in_as(@user)
-    get questions_url
+    get new_question_answer_path(questions(:four))
     assert_response :success
   end
 
-  test "should redirect to new answer path with correct answer" do
+  test "should redirect to questions path when user already answered the question" do
+    sign_in_as(@user)
+    question = questions(:one)
+    @user.answers.create(question: question, value: question.correct_value)
+
+    get new_question_answer_path(question)
+    assert_redirected_to questions_path
+    follow_redirect!
+    assert_select "#alert", "Você já respondeu essa questão."
+  end
+
+  test "should redirect to questions path with correct answer" do
     sign_in_as(@user)
     question = questions(:one)
 
@@ -19,10 +30,9 @@ class AnswersControllerTest < ActionDispatch::IntegrationTest
       post question_answers_path(question), params: { answer: { value: question.correct_value } }
     end
 
-    assert_redirected_to new_question_answer_path(question)
-
+    assert_redirected_to questions_path
     follow_redirect!
-    assert_select "#correct-message", "Parabéns você acertou!"
+    assert_select "#notice", "Parabéns você acertou!"
   end
 
   test "should render new with incorrect answer" do
