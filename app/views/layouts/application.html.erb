@@ -24,8 +24,13 @@
   </head>
 
   <body>
-    <%= tag.div(flash[:alert], class: "alert") if flash[:alert] %>
-    <%= tag.div(flash[:notice], class: "notice") if flash[:notice] %>
+    <% if flash[:alert] %>
+      <%= tag.div(flash[:alert], class: "flash flash--alert") %>
+    <% end %>
+
+    <% if flash[:notice] %>
+      <%= tag.div(flash[:notice], class: "flash flash--notice") %>
+    <% end %>
 
     <%= yield %>
   </body>

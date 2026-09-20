@@ -1,0 +1,22 @@
+.flash {
+  display: block;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  z-index: 1000;
+}
+
+.flash--alert {
+  background-color: var(--color-error);
+  color: var(--color-bg);
+}
+
+.flash--notice {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
