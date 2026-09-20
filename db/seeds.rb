@@ -118,6 +118,7 @@ question3.options.create(description: "Ficar mais cansado", value: "cansado")
 question3.options.create(description: "Não muda nada", value: 'nada')
 
 User.create do |user|
+  user.name = "Anna Vitoria"
   user.email_address = 'anna@anna.com'
   user.password = '12345678'
   user.password_confirmation = '12345678'

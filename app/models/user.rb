@@ -4,4 +4,6 @@ class User < ApplicationRecord
   has_many :answers
 
   normalizes :email_address, with: ->(e) { e.strip.downcase }
+
+  validates :name, presence: true
 end
