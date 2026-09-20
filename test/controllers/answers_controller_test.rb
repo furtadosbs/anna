@@ -5,7 +5,13 @@ class AnswersControllerTest < ActionDispatch::IntegrationTest
     @user = users(:one)
   end
 
-  test "post correct answers" do
+  test "should get index" do
+    sign_in_as(@user)
+    get questions_url
+    assert_response :success
+  end
+
+  test "should redirect to new answer path with correct answer" do
     sign_in_as(@user)
     question = questions(:one)
 
@@ -17,5 +23,17 @@ class AnswersControllerTest < ActionDispatch::IntegrationTest
 
     follow_redirect!
     assert_select "#correct-message", "Parabéns você acertou!"
+  end
+
+  test "should render new with incorrect answer" do
+    sign_in_as(@user)
+    question = questions(:one)
+
+    assert_no_difference("Answer.count") do
+      post question_answers_path(question), params: { answer: { value: "wrong answer" } }
+    end
+
+    assert_response :unprocessable_entity
+    assert_select "#alert", "Resposta incorreta. Tente novamente"
   end
 end
