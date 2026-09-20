@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :questions, only: [ :index, :show ] do
-    resources :answers, only: [ :create ]
+    resources :answers, only: [ :new, :create ]
   end
 
   resources :articles, only: [ :index ]

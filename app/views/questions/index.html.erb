@@ -9,7 +9,7 @@
     <ul class="questions-list">
       <% @questions.each_with_index do |question, index| %>
         <li>
-          <%= link_to question, class: "questions-list__link" do %>
+          <%= link_to new_question_answer_path(question), class: "questions-list__link" do %>
             <%= index + 1 %>
           <% end %>
         </li>
