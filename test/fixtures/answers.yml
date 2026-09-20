@@ -9,3 +9,8 @@ two:
   user: two
   question: two
   value: MyString
+
+three:
+  user: one
+  question: three
+  value: MyString

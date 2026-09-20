@@ -9,3 +9,8 @@ two:
   description: MyString
   stage: two
   correct_value: MyString
+
+three:
+  description: MyString
+  stage: two
+  correct_value: MyString

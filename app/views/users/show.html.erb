@@ -3,6 +3,12 @@
     <h2>
       <%= t '.title' %>, <%= Current.user.name %>!
     </h2>
+
+    <h3>
+      Meus Pontos:
+    </h3>
+
+    <p><%= Current.user.points %> / <%= Question.count %></p>
   </main>
 </div>
 

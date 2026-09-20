@@ -6,4 +6,8 @@ class User < ApplicationRecord
   normalizes :email_address, with: ->(e) { e.strip.downcase }
 
   validates :name, presence: true
+
+  def points
+    answers.count
+  end
 end
