@@ -1,4 +1,11 @@
 <div class="container">
+
+  <header class="navbar">
+    <%= link_to root_path, class: "navbar__brand" do %>
+      <%= image_tag "brand.png"%>
+    <% end %>
+  </header>
+
   <div class="card">
     <div class="card__body">
       <%= form_with url: session_path, class: "card__form" do |form| %>
@@ -9,6 +16,10 @@
 
       <%= link_to t('.forgot_password_link'), new_password_path, class: "text--sm" %>
       <%= link_to "Criar nova conta", new_user_path %>
+
+      <p>Apoio:</p>
+      <%= image_tag "fapemig.jpeg" %>
+      <%= image_tag "univas.jpeg" %>
     </div>
   </div>
 </div>
